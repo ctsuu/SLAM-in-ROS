@@ -43,7 +43,7 @@ src/cartographer/scripts/install_proto3.sh
 ## executed it since installing ROS. This error can be ignored.
 sudo rosdep init
 rosdep update
-rosdep install --from-paths src --ignore-src --rosdistro=${ROS_DISTRO} -y
+rosdep install --from-paths src --ignore-src --rosdistro=${kinetic} -y
 
 ## Build and install.
 catkin_make_isolated --install --use-ninja
@@ -57,6 +57,9 @@ wget -P ~/Downloads https://storage.googleapis.com/cartographer-public-data/bags
 # Launch the 2D backpack demo.
 roslaunch cartographer_ros demo_backpack_2d.launch bag_filename:=${HOME}/Downloads/cartographer_paper_deutsches_museum.bag
 ```
+<p align="center">
+ <img src="./SLAM_2D_large.png" width="800">
+</p>
 
 ```
 # Download the 3D backpack example bag.
@@ -65,4 +68,7 @@ wget -P ~/Downloads https://storage.googleapis.com/cartographer-public-data/bags
 # Launch the 3D backpack demo.
 roslaunch cartographer_ros demo_backpack_3d.launch bag_filename:=${HOME}/Downloads/b3-2016-04-05-14-14-00.bag
 ```
+<p align="center">
+ <img src="./SLAM_3D_localization.png" width="800">
+</p>
 
