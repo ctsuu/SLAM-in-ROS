@@ -72,3 +72,24 @@ roslaunch cartographer_ros demo_backpack_3d.launch bag_filename:=${HOME}/Downloa
  <img src="./SLAM_3D_localization.png" width="800">
 </p>
 
+```
+$ rostopic list
+/clicked_point
+/clock
+/constraint_list
+/horizontal_laser_2d
+/imu
+/initialpose
+/joint_states
+/map
+/move_base_simple/goal
+/rosout
+/rosout_agg
+/scan_matched_points2
+/submap_list
+/tf
+/tf_static
+/trajectory_node_list
+/vertical_laser_2d
+```
+
