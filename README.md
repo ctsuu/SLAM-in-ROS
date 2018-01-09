@@ -92,4 +92,14 @@ $ rostopic list
 /trajectory_node_list
 /vertical_laser_2d
 ```
+rosbag only:
+```
+$ rostopic list
+/clock
+/horizontal_laser_2d
+/imu
+/rosout
+/rosout_agg
+/vertical_laser_2d
+```
 
